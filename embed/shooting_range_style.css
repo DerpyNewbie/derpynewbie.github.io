@@ -58,6 +58,11 @@ body {
     margin: 1rem 0.25rem 0.25rem 0.25rem;
 }
 
+.btn-launch-btn:hover {
+    text-decoration: inherit;
+    color: inherit;
+}
+
 .btn-launch-btn:active {
     background: #1fd1ed;
     border-color: #1fd1ed;

@@ -1,5 +1,6 @@
 /* Dosis font used in VRChat */
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
 
 root {
     background-clip: border-box;
@@ -7,14 +8,15 @@ root {
 
 h1 {
     font-family: 'Dosis', sans-serif;
+    font-weight: 700;
     line-height: 1;
     margin-bottom: 0;
 }
 
 h2 {
     font-family: 'Dosis', sans-serif;
+    font-weight: 500;
     line-height: 1;
-    font-weight: normal;
     margin-top: 0.5rem;
 }
 

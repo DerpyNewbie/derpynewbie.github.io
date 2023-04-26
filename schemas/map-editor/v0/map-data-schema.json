@@ -26,13 +26,17 @@
     },
     "createdAt": {
       "type": "string",
-      "description": "Creation time of this map in DateTime format",
-      "format": "date-time"
+      "description": "Creation time of this map in ISO8601 format",
+      "format": "date-time",
+      "pattern": "^\\d{4}-?\\d{2}-?\\d{2}T\\d{2}:?\\d{2}:?\\d{2}.\\d{3}([+]\\d{0,2}:?\\d{0,2})?",
+      "default": "2000-01-23T01:23:45.678+09:00"
     },
     "updatedAt": {
       "type": "string",
-      "description": "Last update time of this map in DateTime format",
-      "format": "date-time"
+      "description": "Last update time of this map in ISO8601 format",
+      "format": "date-time",
+      "pattern": "^\\d{4}-?\\d{2}-?\\d{2}T\\d{2}:?\\d{2}:?\\d{2}.\\d{3}([+]\\d{0,2}:?\\d{0,2})?",
+      "default": "2000-01-23T01:23:45.678+09:00"
     },
     "data": {
       "type": "array",
@@ -42,7 +46,8 @@
           "guid": {
             "type": "string",
             "description": "Guid of MapProp",
-            "pattern": "^[{]?[0-9a-fA-F]{8}-([0-9a-fA-F]{4}-){3}[0-9a-fA-F]{12}[}]?$"
+            "pattern": "^[{]?[0-9a-fA-F]{8}-([0-9a-fA-F]{4}-){3}[0-9a-fA-F]{12}[}]?$",
+            "default": "00000000-00000-000-000000000000"
           },
           "position": {
             "type": "object",
@@ -50,15 +55,18 @@
             "properties": {
               "x": {
                 "type": "number",
-                "description": "X position of this MapProp item"
+                "description": "X position of this MapProp item",
+                "default": 0
               },
               "y": {
                 "type": "number",
-                "description": "Y position of this MapProp item"
+                "description": "Y position of this MapProp item",
+                "default": 0
               },
               "z": {
                 "type": "number",
-                "description": "Z position of this MapProp item"
+                "description": "Z position of this MapProp item",
+                "default": 0
               }
             },
             "required": ["x", "y", "z"]
@@ -69,15 +77,18 @@
             "properties": {
               "x": {
                 "type": "number",
-                "description": "X scale of this MapProp item"
+                "description": "X scale of this MapProp item",
+                "default": 0
               },
               "y": {
                 "type": "number",
-                "description": "Y scale of this MapProp item"
+                "description": "Y scale of this MapProp item",
+                "default": 0
               },
               "z": {
                 "type": "number",
-                "description": "Z scale of this MapProp item"
+                "description": "Z scale of this MapProp item",
+                "default": 0
               }
             },
             "required": ["x", "y", "z"]
@@ -88,19 +99,23 @@
             "properties": {
               "x": {
                 "type": "number",
-                "description": "X rotation of this MapProp item"
+                "description": "X rotation of this MapProp item",
+                "default": 0
               },
               "y": {
                 "type": "number",
-                "description": "Y rotation of this MapProp item"
+                "description": "Y rotation of this MapProp item",
+                "default": 0
               },
               "z": {
                 "type": "number",
-                "description": "Z rotation of this MapProp item"
+                "description": "Z rotation of this MapProp item",
+                "default": 0
               },
               "w": {
                 "type": "number",
-                "description": "W rotation of this MapProp item"
+                "description": "W rotation of this MapProp item",
+                "default": 0
               }
             },
             "required": ["x", "y", "z", "w"]

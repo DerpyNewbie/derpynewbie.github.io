@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "https://derpynewbie.github.io/schemas/map-editor/v0/preset-data-schema.json",
+  "type": "object",
+  "properties": {
+    "apiVersion": {
+      "type": "string",
+      "description": "Serialized api version. only 0 is accepted",
+      "pattern": "0",
+      "default": "0"
+    },
+    "updatedAt": {
+      "type": "string",
+      "description": "Last update time of this presets list in DateTime format",
+      "format": "date-time"
+    },
+    "messageOfTheDay": {
+      "type": "string",
+      "description": "Message of the day shown at main menu panel"
+    },
+    "maps": {
+      "type": "array",
+      "items": {
+        "$ref": "https://derpynewbie.github.io/schemas/map-editor/v0/map-data-schema.json"
+      }
+    }
+  },
+  "required": ["apiVersion", "updatedAt", "messageOfTheDay", "maps"]
+}

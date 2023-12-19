@@ -90,6 +90,10 @@ footer a {
     margin: 6px 10px;
 }
 
+.nav-item-current a {
+    color: #a4abaa;
+}
+
 .main-menu {
     display: flex;
     flex-direction: row;

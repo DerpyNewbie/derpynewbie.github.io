@@ -11,7 +11,7 @@ html, body {
 }
 
 li {
-   margin: 1rem 0
+    margin: 1rem 0
 }
 
 a {
@@ -40,6 +40,10 @@ main {
     padding: 0 2rem;
     max-width: 75rem;
     align-content: center;
+}
+
+header {
+    padding: 12px 0;
 }
 
 footer {
@@ -86,6 +90,16 @@ footer a {
     display: flex;
 }
 
+
+.main-nav-icon {
+    margin: 0 16px;
+    width: 50px;
+    height: 50px;
+    background-size: 50px;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+}
+
 .nav-item {
     margin: 6px 10px;
 }
@@ -95,6 +109,8 @@ footer a {
 }
 
 .main-menu {
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: row;
     list-style: none;

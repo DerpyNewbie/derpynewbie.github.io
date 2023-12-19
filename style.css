@@ -10,6 +10,10 @@ html, body {
     box-sizing: border-box;
 }
 
+li {
+   margin: 1rem 0
+}
+
 a {
     color: #0e9bb1;
     text-decoration: none;
@@ -32,7 +36,9 @@ nav a:hover {
 }
 
 main {
-    margin: 0 5%;
+    margin: 0 auto;
+    max-width: 75rem;
+    align-content: center;
 }
 
 footer {
@@ -90,6 +96,8 @@ footer a {
 }
 
 .card-container {
+    margin: 2rem 0;
+    padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -99,10 +107,10 @@ footer a {
 
 .card {
     width: 24rem;
-    height: 6rem;
-    margin: 20px;
+    height: 8rem;
+    margin: .5rem;
     background-color: #303030;
-    border-radius: 20px;
+    border-radius: 2rem;
     list-style: none;
     filter: drop-shadow(0 0 0.75rem black);
 }
@@ -131,7 +139,10 @@ footer a {
 }
 
 .card-detail {
-    margin-left: 1rem;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
     flex-direction: column;
 }
 
@@ -148,8 +159,10 @@ footer a {
 
 .card h1 {
     font-size: 1.5rem;
+    margin: .5rem 0;
 }
 
 .card p {
     font-size: .75rem;
+    margin: .5rem 0;
 }

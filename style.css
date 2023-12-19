@@ -215,26 +215,9 @@ footer a {
     margin: .5rem 0;
 }
 
-.button {
-    background-image: linear-gradient(#fff, #ccc);
-    position: relative;
-    z-index: 100;
-
-    &:before {
-        background-image: linear-gradient(#ccc, #fff);
-        content: '';
-        height: 100%;
-        position: absolute;
-        top: 0; left: 0;
-        opacity: 0;
-        width: 100%;
-        z-index: -100;
-        transition: opacity 0.45s;
-    }
-
-    &:hover {
-        &:before {
-            opacity: 1;
-        }
-    }
+.center {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-content: center;
 }

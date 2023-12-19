@@ -2,7 +2,7 @@
 
 html, body {
     background-color: #101010;
-    color: #F6FFFD;
+    color: #f6fffd;
     font: 1.2em / 1.2 "M PLUS Rounded 1c", sans-serif;
     height: 100%;
     padding: 0;
@@ -22,7 +22,7 @@ a:hover {
 }
 
 nav a {
-    color: #F6FFFD;
+    color: #f6fffd;
     text-decoration: none;
 }
 
@@ -36,11 +36,17 @@ main {
 }
 
 footer {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    color: #a4abaa;
+    font-size: 0.75em;
+    padding-top: 60px;
+    padding-bottom: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+footer a {
+    color: #a4abaa;
 }
 
 .wrapper {
@@ -115,12 +121,12 @@ footer {
     display: block flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    color: #F6FFFD;
+    color: #f6fffd;
     text-decoration: none;
 }
 
 .card-link:hover {
-    color: #FFFFFF;
+    color: #ffffff;
     text-decoration: none;
 }
 

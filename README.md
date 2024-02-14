@@ -6,7 +6,7 @@ This is my profile website at https://derpynewbie.dev/. hosted by GitHub Pages
 
 ### Profile Icons
 
-These icons were drawn by <https://twitter.com/Kaoddeka_> for me without a license
+These icons were drawn by <https://twitter.com/Kaoddeka_> for me, without a license
 (Use restricted to the author and the subject only).
 
 - android-chrome-192x192.png

@@ -234,7 +234,8 @@ footer a {
 
 .center {
     display: flex;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     justify-content: center;
     align-content: center;
 }

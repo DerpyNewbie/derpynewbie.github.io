@@ -52,12 +52,17 @@ header {
 footer {
     color: #a4abaa;
     font-size: 0.75em;
-    padding-top: 60px;
-    padding-bottom: 10px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 10000;
+
+    p {
+        padding: 0;
+        margin: 0.5rem;
+    }
 }
 
 footer a {
@@ -71,9 +76,16 @@ footer a {
     flex-direction: column;
 }
 
-.page-header, .page-footer {
+.page-header {
     flex-grow: 0;
     flex-shrink: 0;
+    background-color: #171717;
+    filter: drop-shadow(0 0 0.75rem black);
+}
+
+.page-footer {
+    display: flex;
+    flex-direction: column;
     background-color: #171717;
     filter: drop-shadow(0 0 0.75rem black);
 }

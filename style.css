@@ -183,6 +183,23 @@ footer a {
     }
 }
 
+.no-interact.card {
+    background-image: radial-gradient(circle, rgb(35, 32, 34) 0%, rgb(51, 47, 49) 100%);
+    z-index: 90;
+
+    &:before {
+        background-image: radial-gradient(circle, rgb(35, 32, 34) 0%, rgb(51, 47, 49) 100%);
+    }
+}
+
+.no-interact.card-link {
+    color: #a4abaa;
+
+    &:hover {
+        color: #a4abaa;
+    }
+}
+
 .card-link {
     margin: 0;
     padding: 0;

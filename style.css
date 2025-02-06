@@ -68,7 +68,7 @@ nav a:hover {
 
 main {
     filter: drop-shadow(0 0 0.75rem black);
-    background-color: #151515;
+    background-color: #151515bb;
     margin: 0 auto;
     padding: 0 2rem;
     max-width: 75rem;
@@ -123,6 +123,8 @@ footer a {
 
 .page-body {
     flex-grow: 1;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .top-nav-main {
@@ -287,7 +289,7 @@ footer a {
     align-content: center;
 }
 
-.works-background {
+.covered-background {
     background-size: cover;
     background-position: center;
 }

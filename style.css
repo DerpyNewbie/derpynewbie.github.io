@@ -1,4 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300&family=M+PLUS+Rounded+1c&display=swap');
+@import url('https://use.fontawesome.com/releases/v5.11.0/css/all.css');
+
+/* Link Highlighting Begin */
+a {
+    color: #d9f8f4;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+a:hover {
+    color: blanchedalmond;
+}
+
+
+a:not(.card-link)[target="_blank"]:after,
+.ob-link:after {
+    margin: 0 0 0 10px;
+    font-family: "Font Awesome 5 Free";
+    content: '\f35d';
+    font-weight: 900;
+}
+
+[class*="disable-ob-link"]:after {
+    margin: inherit;
+    font-family: inherit;
+    content: '';
+    font-weight: inherit;
+}
+
+
+/* Link Highlighting End */
 
 html, body {
     background-color: #101010;
@@ -254,4 +285,46 @@ footer a {
     margin: 0.5rem auto;
     justify-content: center;
     align-content: center;
+}
+
+.works-background {
+    background-size: cover;
+    background-position: center;
+}
+
+.works-content {
+    filter: drop-shadow(0 0 0.75rem black);
+    background-color: #151515bb;
+    margin: 5rem auto;
+    padding: 1rem 1rem;
+    max-width: 75rem;
+    align-content: center;
+    border-radius: 5rem;
+}
+
+.works-horizontal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+.works-image {
+    width: 20rem;
+    border-radius: 1rem;
+    margin: .5rem;
+}
+
+.works-card {
+    width: 5rem;
+    height: 3rem
+}
+
+.works-card-link {
+    align-items: center;
+    align-content: center;
+    justify-content: center;
 }

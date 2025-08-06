@@ -194,7 +194,7 @@ footer a {
     z-index: 100;
 
     &:before {
-        transition: opacity .3s;
+        transition: opacity 100ms;
         content: '';
         border-radius: inherit;
         height: 100%;
@@ -211,7 +211,7 @@ footer a {
     &:hover {
         &:before {
             opacity: 1;
-            transition: opacity .1s;
+            transition: opacity 300ms;
         }
     }
 }
@@ -243,13 +243,13 @@ footer a {
     flex-direction: row;
     flex-wrap: nowrap;
     text-decoration: none;
-    transition: color .3s;
+    transition: color 100ms;
     color: #f6fffd;
 
     &:hover {
         color: #140a14;
         text-decoration: none;
-        transition: color .1s;
+        transition: color 300ms;
     }
 }
 

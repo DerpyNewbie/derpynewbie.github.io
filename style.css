@@ -16,6 +16,7 @@ a:hover {
 a:not(.card-link)[target="_blank"]:after,
 .ob-link:after {
     margin: 0 0 0 10px;
+    /*noinspection CssNoGenericFontName*/
     font-family: "Font Awesome 5 Free";
     content: '\f35d';
     font-weight: 900;

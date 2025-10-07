@@ -42,12 +42,8 @@ html, body {
     box-sizing: border-box;
 }
 
-li {
-    margin: 1rem 0
-}
-
 a {
-    color: #0e9bb1;
+    color: #aef0fd;
     text-decoration: none;
     background-color: transparent;
 }
@@ -166,6 +162,16 @@ footer a {
     list-style: none;
 }
 
+.split {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
 .card-container {
     margin: 0.5rem;
     padding: 0;
@@ -177,15 +183,35 @@ footer a {
     flex-flow: wrap;
 }
 
+.flex-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: wrap;
+
+    li {
+        list-style-type: disc;
+        margin-left: 1.5rem;
+    }
+}
+
+.hashtag-list {
+    li {
+        list-style-type: "#";
+        margin-left: 1.5rem;
+    }
+}
+
 .card {
     flex-grow: 1;
     max-width: 440px;
     min-width: 300px;
-    margin: .5rem;
+    margin: 10px;
     padding: 0;
-    height: 140px;
-    flex-basis: 440px;
-    border-radius: 2rem;
+    border-radius: 50px;
     list-style: none;
     filter: drop-shadow(0 0 0.75rem black);
     display: inline-block;
@@ -254,12 +280,35 @@ footer a {
     }
 }
 
-.card-detail {
-    margin: 1rem;
-    display: flex;
+.card-contents {
     justify-content: center;
     align-content: center;
     flex-direction: column;
+    padding: 1rem;
+
+    * {
+        margin: 10px 0;
+        padding: 0;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 1rem;
+    }
+}
+
+.card-detail {
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    padding: 1rem;
+    font-size: .75rem;
+
+    * {
+        margin: 10px 0;
+        padding: 0;
+    }
 }
 
 .card-icon {
@@ -271,16 +320,6 @@ footer a {
     border-radius: 1rem;
     justify-content: center;
     align-content: center;
-}
-
-.card h1 {
-    font-size: 1.5rem;
-    margin: .5rem 0;
-}
-
-.card p {
-    font-size: .75rem;
-    margin: .5rem 0;
 }
 
 .center {
@@ -305,7 +344,7 @@ footer a {
     border-radius: 5rem;
 }
 
-.works-horizontal {
+.horizontal {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -330,4 +369,10 @@ footer a {
     align-items: center;
     align-content: center;
     justify-content: center;
+    font-size: 1.25rem;
+}
+
+.full-width {
+    width: 100%;
+    max-width: none;
 }

@@ -39,7 +39,7 @@
 
 
 <body>
-<div class="wrapper covered-background" style="background-image: url('images/main-background.png')">
+<div class="wrapper covered-background" style="background-image: url('images/main-background.jpg')">
     <header class="page-header">
         <div class="top-nav-main">
             <nav class="main-nav">
@@ -55,18 +55,119 @@
         </div>
     </header>
     <main class="page-body">
-        <h1>Hello World!</h1>
-        <div style='height: 142px; width: 225px; background-image: url("images/Profile_Peace.png");'></div>
-        <h2 id="about">About Me</h2>
-        <p>
-            VRChat上で遊べるギミックを制作をしている無言勢な人です。何かを雑にそれっぽく仕上げることが得意です。
-        </p>
-        <p>過去にはMinecraftのサーバープラグインを制作したり、Discord Botを作ったりしていました。</p>
-        <p>
-            使用したことがある言語は Java / C#(Unity, .NET) / C++(UE) で、Rust / HTML / CSS / JavaScript
-            を勉強したいと思っています。
-        </p>
+        <h1>Profile</h1>
+        <div class="split">
+            <ul class="card-container" style="flex-direction: column; flex: 6">
+                <li class="card no-interact full-width">
+                    <div class="card-contents">
+                        <h2 id="about">About Me</h2>
+                        <p>VRChat上で遊べるギミックを制作をしている人です。</p>
+                        <p>何かをそれっぽく仕上げることが得意です。</p>
+                        <p>読み方は "だーぴーにゅーびー"。</p>
+                    </div>
+                </li>
+                <li class="card no-interact full-width">
+                    <div class="card-contents">
+                        <h2 id="favorites">Favorites</h2>
+                        <ul class="flex-list hashtag-list">
+                            <li>牛乳</li>
+                            <li>VR</li>
+                            <li>VRサバゲー</li>
+                            <li>VRChat</li>
+                            <li>Photography</li>
+                            <li>VALORANT</li>
+                            <li>ETS2</li>
+                            <li>BF4</li>
+                            <li>Minecraft</li>
+                            <li>FPS</li>
+                            <li>GO VACATION (Wii)</li>
+                            <li>Kawaii</li>
+                            <li>ぽちゃっこ</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="card no-interact full-width">
+                    <div class="card-contents">
+                        <h2>Photos</h2>
+                        <div class="horizontal">
+                            <img style="max-width: 50%" src="./images/vrc-photo-1.jpg"
+                                 alt="A photo of DerpyNewbie, looking back at the viewer."/>
+                            <img style="max-width: 50%" src="./images/vrc-photo-2.jpg"
+                                 alt="A photo of DerpyNewbie, laying down in sofa."/>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="card-container" style="flex-direction: column; flex: 4">
+                <li class="card no-interact full-width">
+                    <div class="card-contents">
+                        <div class="center" style='height: 142px; width: 225px; background-image: url("images/Profile_Peace.png");'></div>
+                    </div>
+                </li>
+                <li class="card no-interact full-width">
+                    <div class="card-contents">
+                        <h2 id="languages">Languages</h2>
+                        <ul class="flex-list hashtag-list">
+                            <li>Japanese</li>
+                            <li>English</li>
+                            <li>Java</li>
+                            <li>CSharp (Unity, .NET)</li>
+                            <li>C++ (Native, UE)</li>
+                            <li>UdonSharp</li>
+                            <li>Rust</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="card no-interact full-width">
+                    <div class="card-contents">
+                        <h2 id="skills">Skills</h2>
+                        <ul class="flex-list hashtag-list">
+                            <li>Rider</li>
+                            <li>IntelliJ IDEA</li>
+                            <li>Visual Studio</li>
+                            <li>Unity</li>
+                            <li>Blender</li>
+                            <li>Photoshop</li>
+                            <li>Lightroom Classic</li>
+                            <li>Premier Pro</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="card no-interact full-width">
+                    <div class="card-contents">
+                        <h2 id="contact">Contact</h2>
+                        <ul class="flex-list">
+                            <li><a target="_blank" href="https://twitter.com/derpynewbie">Twitter</a></li>
+                            <li><a target="_blank" href="https://github.com/derpynewbie">GitHub</a></li>
+                            <li><a target="_blank" href="mailto://contact@derpynewbie.dev">Email</a></li>
+                            <li><a target="_self" href="./links">See More</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
         <h2 id="my-works">My Works</h2>
+        <h3 class="center">Games</h3>
+        <ul class="card-container disable-link-mark">
+            <li class="card">
+                <a class="card-link" target="_blank" href="https://derpynewbie.dev/Pendulumer">
+                    <div class="card-detail">
+                        <h1>Pendulumer</h1>
+                        <p>ブラウザで遊べる2Dワイヤーアクションゲームです</p>
+                    </div>
+                </a>
+            </li>
+            <li class="card">
+                <a class="card-link" target="_blank" href="https://unityroom.com/games/natsumatsuribattle">
+                    <div class="card-detail">
+                        <h1>夏祭りバトル</h1>
+                        <p>ゲームジャムにてチーム制作したシューティングゲームです</p>
+                    </div>
+                </a>
+            </li>
+        </ul>
         <h3 class="center">VRChat Gimmicks</h3>
         <ul class="card-container disable-link-mark">
             <li class="card">

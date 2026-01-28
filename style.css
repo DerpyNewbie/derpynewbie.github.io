@@ -186,6 +186,7 @@ footer a {
 .flex-list {
     margin: 0;
     padding: 0;
+    column-gap: .15rem;
     display: flex;
     justify-content: left;
     flex-direction: row;
@@ -194,14 +195,26 @@ footer a {
 
     li {
         list-style-type: disc;
-        margin-left: 1.5rem;
+        list-style-position: inside;
+        margin: 0 auto .5rem .5rem;
     }
 }
 
 .hashtag-list {
     li {
         list-style-type: "#";
-        margin-left: 1.5rem;
+        list-style-position: inside;
+    }
+}
+
+.list-bg {
+    margin: auto 1rem;
+
+    li {
+        background-color: #3b3a3a;
+        border-radius: 1rem;
+        padding: .15rem .5rem;
+        margin: .25rem;
     }
 }
 
@@ -336,7 +349,7 @@ footer a {
 
 .works-content {
     filter: drop-shadow(0 0 0.75rem black);
-    background-color: #151515bb;
+    background-color: rgba(21, 21, 21, 0.85);
     margin: 5rem auto;
     padding: 1rem 1rem;
     max-width: 75rem;
@@ -352,6 +365,12 @@ footer a {
     align-content: center;
     align-items: center;
     margin: 1rem;
+}
+
+.left {
+    display: flex;
+    margin-right: auto;
+    justify-content: left;
 }
 
 .works-image {

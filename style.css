@@ -343,15 +343,44 @@ footer a {
 }
 
 .covered-background {
+    position: relative;
+    overflow: hidden;
+    background: none;
+    z-index: 0;
+}
+
+.covered-background::before {
+    content: "";
+    position: absolute;
+
+    inset: 0;
+
+    background-image: var(--bg-image);
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+
+    filter: blur(2px);
+    transform: scale(1.06);
+    z-index: -1;
 }
+
+.covered-background::after {
+    content: "";
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
 
 .works-content {
     backdrop-filter: blur(1rem);
     filter: drop-shadow(0 0 0.75rem black);
     background-color: rgba(21, 21, 21, 0.85);
-    margin: 5rem auto;
+    margin: 1rem auto;
     padding: 1rem 1rem;
     max-width: 75rem;
     align-content: center;
